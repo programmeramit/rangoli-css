@@ -1,0 +1,29 @@
+.navbar{
+    display:flex;
+    border-bottom:$base-border-thickness solid #fff;
+    align-items: center;
+    justify-content:space-around;
+    .navbar-brand{
+        font-size:$base-font-size*1.5;
+        font-weight:bold;
+        color: #fff;
+    }
+    .navbar-items{
+        list-style-type: none;
+        padding: $base-padding*1.5;
+        
+        a{
+            color:#e2e2e2;
+            padding: $base-padding*0.5;
+            text-decoration: none;
+            &:hover{
+                color:lighten(#e2e2e2,5);
+            }
+    
+        }
+    }
+   
+    
+
+}
+

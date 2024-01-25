@@ -1,0 +1,43 @@
+@each $key,$val in $colors{
+    .text-#{$key}{
+        color:$val
+    };
+    .bg-#{$key}{
+        background-color:$val
+    }
+
+    .text-hover-#{$key}{
+        &:hover{
+            color:$val
+        }
+    }
+
+    .bg-hover-#{$key}{
+        &:hover{
+            background-color:$val
+        }
+    }
+    @if($val!=black and $val!=white){
+     
+    @for $i from 1 through 5{
+        .text-#{$key}-#{$i}{
+            color:darken($val,$i*10%)
+        };
+        .text-hover-#{$key}-#{$i}{
+            &:hover{
+                color:darken($val,$i*10%)
+            }
+        }
+        .bg-hover-#{$key}-#{$i}{
+            &:hover{
+                background-color:darken($val,$i*10%)
+            }
+        }
+        .bg-#{$key}-#{$i}{
+            background-color:darken($val,$i*10%)
+        }
+        
+    }
+    }
+
+}

@@ -1,0 +1,40 @@
+.form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: $base-padding;
+    border:$base-border-thickness solid #fff;
+    margin-bottom: $base-margin*2;
+    width:500px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    text-align: center;
+  
+    .form-title{
+        font-size:$base-font-size*1.5;
+        font-weight:bold;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    .form-input{
+        padding: $base-padding;
+        border:$base-border-thickness solid #fff;
+        width: 100%;
+        margin-bottom: $base-margin;
+
+    }
+}
+.form-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: $base-padding;
+    flex-direction:column;
+    a{
+        text-decoration: underline;
+    }
+    padding: $base-padding;
+    margin: $base-margin;
+
+}

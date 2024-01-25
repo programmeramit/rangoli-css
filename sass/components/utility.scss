@@ -1,0 +1,51 @@
+
+$base-margin:0.75rem;
+$base-padding:0.75rem;
+
+
+@for $i from 1 through 5 {
+    .p-#{$i} {
+        padding: $base-padding * $i;
+        };
+    .p-left-#{$i} {
+        padding-left: $base-padding * $i;
+    };
+    .p-right-#{$i} {
+        padding-right: $base-padding * $i;
+    };
+    .p-top-#{$i} {
+        padding-top: $base-padding * $i;
+    };
+    .p-bottom-#{$i} {
+        padding-bottom: $base-padding * $i;
+    };
+    .m-#{$i} {
+        margin: $base-margin * $i;
+    };
+    .m-left-#{$i} {
+        margin-left: $base-margin * $i;
+    };
+    .m-right-#{$i} {
+        margin-right: $base-margin * $i;
+    };
+    .m-top-#{$i} {
+        margin-top: $base-margin * $i;
+    };
+    .m-bottom-#{$i} {
+        margin-bottom: $base-margin * $i;
+    };
+    
+
+}
+
+$base-width: 8vw;
+$base-height: 8vh;
+
+@for $i from 1 through 8{
+    .w-#{$i}{
+        width: $base-width * $i;
+    }
+    .h-#{$i}{
+        height: $base-height * $i;
+    }
+}

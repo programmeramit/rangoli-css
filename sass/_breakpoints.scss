@@ -1,0 +1,67 @@
+$breakpoints:(
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px
+);
+
+@mixin xs{
+    @media (min-width:map-get($breakpoints,'xs')){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media (min-width:map-get($breakpoints,'sm')){
+        @content;
+    }
+}
+
+@mixin md{
+    @media (min-width:map-get($breakpoints,'md')){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (min-width:map-get($breakpoints,'lg')){
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (min-width:map-get($breakpoints,'xl')){
+        @content;
+    }
+}
+
+@mixin breakpoint($bp:0){
+
+    @media (min-width:$bp){
+        @content;
+    }
+}
+
+.responsive-text{
+    @include xs{
+        font-size: 10px;
+        color: red;
+    }
+    @include sm{
+        font-size: 12px;
+        color:blue;
+    }
+    @include md{
+        font-size: 14px;
+        color: green;
+    }
+    @include lg{
+        font-size: 16px;
+        color: yellow;
+    }
+    @include xl{
+        font-size: 18px;
+        color: pink;
+    }
+}

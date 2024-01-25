@@ -1,0 +1,50 @@
+$primary: #12a4d9;
+$gold:#f3ca20;
+$white:#ffffff;
+$black:#322e2f;
+$magneta:#d9138a;
+$red:#e52165;
+$green:#35e389;
+$secondary:#f3ca20;
+
+$colors:(
+    'primary':$primary,
+    'gold':$gold,
+    'white':$white,
+    'black':$black,
+    'magneta':$magneta,
+    'red':$red,
+    'green':$green,
+    'secondary':$secondary,
+    'orange':orange,
+    'grey': grey,
+    'blue':blue,
+    'pink':pink,
+    'purple':purple,
+    'yellow':yellow,
+    'brown':brown,
+    'teal':teal,
+    'indigo':indigo,
+    'cyan':cyan,
+    'lime':lime,
+    'amber': #ffc107,
+    'deep-orange': #ff5722,
+    'deep-purple': #673ab7,
+    'blue-grey': #607d8b,
+
+     
+);
+
+$base-margin: 0.75rem;
+$base-padding: 0.75rem;
+
+$base-border-thickness:1px;
+$base-border-radius:20px;
+
+$base-font-size:1rem;
+
+$base-box-shadow:20px 13px 17px -7px rgba(0,0,0,0.1);
+
+$base-width:5vw;
+$base-height:5vh;
+
