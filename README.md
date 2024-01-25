@@ -7,3 +7,18 @@
 
 >This is build with saas and gulp with node
 
+*Setup Rangoli in your local system*
+*Clone the directory to you system*
+
+```
+npm install
+
+```
+
+*Then run the gulp*
+
+```
+gulp
+
+```
+
